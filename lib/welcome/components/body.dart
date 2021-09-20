@@ -1,0 +1,66 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:olx_app/Login/login_screen.dart';
+import 'package:olx_app/Widgets/rounded_button.dart';
+import 'package:olx_app/welcome/components/background.dart';
+import 'package:olx_app/Signup/signup_screen.dart';
+class WelcomeBody extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return WelcomeBackground(
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "eInstrukcije",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontFamily: "Signatra",
+                fontSize: 60.0,
+                color: Colors.deepPurple[100]
+
+              ),
+            ),
+            SizedBox(height: size.height * 0.05),
+            SvgPicture.asset("assets/icons/chat.svg",
+              height: size.height * 0.45,
+            ),
+            SizedBox(height: size.height * 0.05),
+            RoundedButton(
+              text: "Prijava",
+              press: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context){
+                      return LoginScreen();
+                    },
+                  ),
+                );
+              },
+            ),
+          RoundedButton(
+            text: "Registracija",
+            color: Colors.deepPurple[100],
+            textColor: Colors.black,
+            press: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context){
+                    return SignupScreen();
+                  },
+                ),
+              );
+
+            }
+          ),
+          ],
+        ),
+      ),
+    );
+  }
+}

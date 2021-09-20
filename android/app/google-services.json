@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1057747140018",
+    "project_id": "unipu-instrukcije",
+    "storage_bucket": "unipu-instrukcije.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057747140018:android:be2cb0f5c1b68fa073b8ab",
+        "android_client_info": {
+          "package_name": "com.markopavlovic.olxapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057747140018-u5pku2ksagofef171mel5r9gvcc2dqlu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg3sMVty8p8lo9_yQf3Vyp6IRghKQ6XUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057747140018-u5pku2ksagofef171mel5r9gvcc2dqlu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
